@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Form</title>
+</head>
+<body>
+
+<h2>Employee Form</h2>
+
+<form id="employeeForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br>
+
+    <label for="employeeId">Employee ID:</label>
+    <input type="text" id="employeeId" name="employeeId" required><br>
+
+    <label for="department">Department:</label>
+    <select id="department" name="department" required>
+        <option value="frontend">Frontend</option>
+        <option value="backend">Backend</option>
+        <option value="Ops">Ops</option>
+        <option value="HR">HR</option>
+        <option value="IA">IA</option>
+    </select><br>
+
+    <label for="experience">Experience (in years):</label>
+    <input type="number" id="experience" name="experience" required><br>
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required><br>
+
+    <label for="mobile">Mobile Number:</label>
+    <input type="tel" id="mobile" name="mobile" required><br>
+
+    <button type="button" onclick="addEmployee()">Submit</button>
+</form>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Employee ID</th>
+            <th>Department</th>
+            <th>Experience (years)</th>
+            <th>Email Address</th>
+            <th>Mobile Number</th>
+            <th>Role</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody id="employeeTableBody">
+        <!-- Table body content will be appended dynamically -->
+    </tbody>
+</table>
+
+<script src="record.js">
+    
+</script>
+
+</body>
+</html>
